@@ -1,0 +1,33 @@
+# AI Job Hunter — Python dependencies
+
+# ── Core scraping ─────────────────────────────────────────────────────────────
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0                    # faster HTML parser for BeautifulSoup
+
+# ── JavaScript-rendered pages ─────────────────────────────────────────────────
+playwright>=1.43.0             # after install, run: playwright install chromium
+
+# ── LLM classification ────────────────────────────────────────────────────────
+google-generativeai>=0.7.0     # Gemini API (free tier)
+
+# ── Database ──────────────────────────────────────────────────────────────────
+# sqlite3 is part of Python stdlib — no extra install needed
+
+# ── Scheduling ────────────────────────────────────────────────────────────────
+apscheduler>=3.10.0
+
+# ── Configuration / environment ───────────────────────────────────────────────
+python-dotenv>=1.0.0
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest>=8.0.0
+pytest-mock>=3.12.0
+
+# ── Optional: Telegram (already via requests, no extra lib needed) ────────────
+# Optional: email (stdlib smtplib — no extra install needed)
+sentence-transformers>=2.0.0
+
+# ── Dashboard (v9) ───────────────────────────────────────────────────────────
+streamlit>=1.35.0
+pandas>=2.0.0

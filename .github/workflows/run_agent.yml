@@ -1,0 +1,83 @@
+name: AI Job Hunter — Scheduled Run (v9)
+
+on:
+  # v9: Run every 8 hours
+  schedule:
+    - cron: '0 */8 * * *'
+
+  # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (no DB writes or notifications)?'
+        required: false
+        default: 'false'
+        type: boolean
+
+# Required so the job can push the updated jobs.db back to the repo
+permissions:
+  contents: write
+
+jobs:
+  run-pipeline:
+    name: Run Job Hunter Pipeline
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        working-directory: ai-job-hunter
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright browsers
+        working-directory: ai-job-hunter
+        run: |
+          playwright install chromium --with-deps
+
+      - name: Run pipeline
+        working-directory: ai-job-hunter
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          LOG_LEVEL: INFO
+        run: |
+          python -m scheduler.run --mode ${{ inputs.dry_run == 'true' && 'dry-run' || 'once' }}
+
+      - name: Commit and push updated jobs.db
+        if: success() && inputs.dry_run != 'true'
+        working-directory: ai-job-hunter
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add database/jobs.db
+          # Only commit+push if jobs.db actually changed
+          if git diff --cached --quiet; then
+            echo "No changes to jobs.db — skipping commit."
+          else
+            git commit -m "chore: update job db [skip ci]"
+            git push
+          fi
+
+      - name: Upload run logs as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-logs-${{ github.run_id }}
+          path: ai-job-hunter/database/jobs.db
+          retention-days: 30

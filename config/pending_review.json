@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Rivvun",
+    "slug_guess": "rivvun",
+    "source_article": "Icertis veterans' enterprise AI startup Rivvun raises $7.55 million seed round led by Sitara Capital",
+    "discovered_at": "2026-07-13T08:37:17.771197+00:00",
+    "status": "pending",
+    "notes": "No ATS detected — may need a custom scraper."
+  },
+  {
+    "name": "As AI",
+    "slug_guess": "asai",
+    "source_article": "As AI hiring booms, companies rethink skills for the enterprise era - ANI News",
+    "discovered_at": "2026-07-13T08:37:21.655479+00:00",
+    "status": "pending",
+    "notes": "No ATS detected — may need a custom scraper."
+  },
+  {
+    "name": "How",
+    "slug_guess": "how",
+    "source_article": "How a Pune startup is using AI to rewrite the rules of green chemistry - The Times of India",
+    "discovered_at": "2026-07-13T08:37:25.639138+00:00",
+    "status": "pending",
+    "notes": "No ATS detected — may need a custom scraper."
+  },
+  {
+    "name": "ExtraaEdge",
+    "slug_guess": "extraaedge",
+    "source_article": "[Funding alert] Pune-based SaaS startup ExtraaEdge raises $700k in Pre-series A round from Sprout Ve",
+    "discovered_at": "2026-07-13T08:37:29.547875+00:00",
+    "status": "pending",
+    "notes": "No ATS detected — may need a custom scraper."
+  },
+  {
+    "name": "Beep",
+    "slug_guess": "beep",
+    "source_article": "Edtech startup Beep raises $850K in pre-Series A round - Entrackr",
+    "discovered_at": "2026-07-13T08:37:33.464475+00:00",
+    "status": "pending",
+    "notes": "No ATS detected — may need a custom scraper."
+  }
+]

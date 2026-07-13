@@ -1,0 +1,316 @@
+[
+  {
+    "name": "Postman",
+    "ats_type": "greenhouse",
+    "identifier": "postman",
+    "location_priority": "india",
+    "enabled": true,
+    "notes": "Greenhouse board verified at boards.greenhouse.io/postman"
+  },
+  {
+    "name": "Chargebee",
+    "ats_type": "custom",
+    "identifier": "https://www.chargebee.com/careers/",
+    "location_priority": "india",
+    "enabled": true,
+    "notes": "Uses custom Greenhouse-embedded page — custom HTML scraper needed"
+  },
+  {
+    "name": "BrowserStack",
+    "ats_type": "custom",
+    "identifier": "browserstack",
+    "location_priority": "india",
+    "enabled": true,
+    "notes": "Uses Workday ATS. Workday slug: browserstack"
+  },
+  {
+    "name": "Freshworks",
+    "ats_type": "custom",
+    "identifier": "https://www.freshworks.com/company/careers/",
+    "location_priority": "india",
+    "enabled": true,
+    "notes": "SmartRecruiters-based. Custom scraper in scrapers/custom/freshworks.py"
+  },
+  {
+    "name": "Persistent Systems",
+    "ats_type": "custom",
+    "identifier": "https://www.persistent.com/careers/",
+    "location_priority": "pune",
+    "enabled": true,
+    "notes": "Pune HQ. Custom scraper with iCIMS API + Playwright fallback"
+  },
+  {
+    "name": "Talentica",
+    "ats_type": "custom",
+    "identifier": "https://www.talentica.com/careers/",
+    "location_priority": "pune",
+    "enabled": true,
+    "notes": "Pune startup. Custom HTML scraper"
+  },
+  {
+    "name": "Datametica",
+    "ats_type": "custom",
+    "identifier": "https://datametica.com/careers/",
+    "location_priority": "pune",
+    "enabled": true,
+    "notes": "Pune data company. Custom HTML scraper"
+  },
+  {
+    "name": "FlytBase",
+    "ats_type": "custom",
+    "identifier": "https://flytbase.com/careers/jobs/",
+    "location_priority": "pune",
+    "enabled": true,
+    "notes": "Pune drone company. Uses custom job portal at flytbase.com/careers/jobs/"
+  },
+  {
+    "name": "Sarvam AI",
+    "ats_type": "custom",
+    "identifier": "https://jobs.ashbyhq.com/sarvam.ai",
+    "location_priority": "india",
+    "enabled": true,
+    "notes": "AI startup. Ashby board at jobs.ashbyhq.com/sarvam.ai — uses custom scraper"
+  },
+  {
+    "name": "Fractal Analytics",
+    "ats_type": "custom",
+    "identifier": "fractal",
+    "location_priority": "india",
+    "enabled": true,
+    "notes": "Uses Workday ATS. Custom scraper in scrapers/custom/fractal.py"
+  },
+  {
+    "name": "Zensar Technologies",
+    "ats_type": "greenhouse",
+    "identifier": "zensartechnologies",
+    "location_priority": "pune",
+    "enabled": true,
+    "notes": "Phase 2 — Pune-based IT company. Check greenhouse slug."
+  },
+  {
+    "name": "PubMatic",
+    "ats_type": "greenhouse",
+    "identifier": "pubmatic",
+    "location_priority": "pune",
+    "enabled": true,
+    "notes": "Phase 2 — Pune adtech company. Verify greenhouse slug."
+  },
+  {
+    "name": "NICE",
+    "ats_type": "greenhouse",
+    "identifier": "nice",
+    "location_priority": "pune",
+    "enabled": true,
+    "notes": "Phase 2 — Software company with Pune office. Verify greenhouse slug."
+  },
+  {
+    "name": "Xoriant",
+    "ats_type": "greenhouse",
+    "identifier": "xoriant",
+    "location_priority": "pune",
+    "enabled": true,
+    "notes": "Phase 2 — Pune-based tech services. Verify greenhouse slug."
+  },
+  {
+    "name": "Searce",
+    "ats_type": "lever",
+    "identifier": "searce",
+    "location_priority": "pune",
+    "enabled": true,
+    "notes": "Phase 2 — Cloud consulting. Verify lever slug."
+  },
+  {
+    "name": "Razorpay",
+    "ats_type": "greenhouse",
+    "identifier": "razorpay",
+    "location_priority": "india",
+    "enabled": true,
+    "notes": "Phase 3 company pulled forward — large India fintech."
+  },
+  {
+    "name": "PhonePe",
+    "ats_type": "greenhouse",
+    "identifier": "phonepe",
+    "location_priority": "india",
+    "enabled": true,
+    "notes": "Phase 3 pulled forward — India fintech."
+  },
+  {
+    "name": "CRED",
+    "ats_type": "lever",
+    "identifier": "cred",
+    "location_priority": "india",
+    "enabled": true,
+    "notes": "Phase 3 pulled forward — Bangalore fintech."
+  },
+  {
+    "name": "Groww",
+    "ats_type": "lever",
+    "identifier": "groww",
+    "location_priority": "india",
+    "enabled": true,
+    "notes": "Phase 3 pulled forward — Investment platform."
+  },
+  {
+    "name": "Zepto",
+    "ats_type": "greenhouse",
+    "identifier": "zepto",
+    "location_priority": "india",
+    "enabled": true,
+    "notes": "Phase 3 pulled forward — Quick commerce."
+  },
+  {
+    "name": "Meesho",
+    "ats_type": "lever",
+    "identifier": "meesho",
+    "location_priority": "india",
+    "enabled": true,
+    "notes": "Phase 3 pulled forward — Social commerce."
+  },
+  {
+    "name": "Veritas Technologies",
+    "ats_type": "greenhouse",
+    "identifier": "verabornetechnologies",
+    "location_priority": "pune",
+    "enabled": true,
+    "notes": "Phase 2 — Pune presence. Verify greenhouse slug."
+  },
+  {
+    "name": "Dassault Systèmes",
+    "ats_type": "greenhouse",
+    "identifier": "dassaultsystemes",
+    "location_priority": "pune",
+    "enabled": true,
+    "notes": "Phase 2 — Pune office. Verify greenhouse slug."
+  },
+  {
+    "name": "Siemens DISW",
+    "ats_type": "greenhouse",
+    "identifier": "siemens",
+    "location_priority": "pune",
+    "enabled": true,
+    "notes": "Phase 2 — Siemens Digital Industries SW, Pune. Verify slug."
+  },
+  {
+    "name": "Harbinger Group",
+    "ats_type": "greenhouse",
+    "identifier": "harbingergroup",
+    "location_priority": "pune",
+    "enabled": true,
+    "notes": "Phase 2 — Pune-based product engineering. Verify slug."
+  },
+  {
+    "name": "Cybage",
+    "ats_type": "greenhouse",
+    "identifier": "cybage",
+    "location_priority": "pune",
+    "enabled": true,
+    "notes": "Phase 2 — Pune IT company. Verify slug."
+  },
+  {
+    "name": "Tata Technologies",
+    "ats_type": "greenhouse",
+    "identifier": "tatatechnologies",
+    "location_priority": "pune",
+    "enabled": true,
+    "notes": "Phase 2 — Engineering services, Pune HQ. Verify slug."
+  },
+  {
+    "name": "Tech Mahindra",
+    "ats_type": "greenhouse",
+    "identifier": "techmahindra",
+    "location_priority": "pune",
+    "enabled": true,
+    "notes": "Phase 2 — Large IT company with Pune presence. Verify slug."
+  },
+  {
+    "name": "Naukri - AI/ML/SDE Jobs Pune",
+    "ats_type": "naukri",
+    "identifier": "data scientist,machine learning engineer,software engineer,backend developer,frontend developer",
+    "location_priority": "pune",
+    "search_location": "pune",
+    "enabled": true,
+    "notes": "v3 aggregator — Naukri.com search for AI/ML + SDE roles in Pune"
+  },
+  {
+    "name": "Naukri - AI/ML/SDE Jobs India",
+    "ats_type": "naukri",
+    "identifier": "ai engineer,ml engineer,data analyst,full stack developer,devops engineer",
+    "location_priority": "india",
+    "search_location": "india",
+    "enabled": true,
+    "notes": "v3 aggregator — Naukri.com search for broader roles across India"
+  },
+  {
+    "name": "Instahyre - Tech Jobs Pune",
+    "ats_type": "instahyre",
+    "identifier": "data scientist,software engineer,backend developer",
+    "location_priority": "pune",
+    "search_location": "pune",
+    "enabled": true,
+    "notes": "v3 aggregator — Instahyre startup-focused job board"
+  },
+  {
+    "name": "Cutshort - Tech Jobs Pune",
+    "ats_type": "cutshort",
+    "identifier": "machine learning,software engineer,data analyst",
+    "location_priority": "pune",
+    "search_location": "pune",
+    "enabled": true,
+    "notes": "v3 aggregator — Cutshort curated tech hiring platform"
+  },
+  {
+    "name": "Wellfound - Startup Jobs India",
+    "ats_type": "wellfound",
+    "identifier": "software-engineer,data-scientist,machine-learning-engineer,backend-developer",
+    "location_priority": "india",
+    "search_location": "india",
+    "enabled": true,
+    "notes": "v3 aggregator — Wellfound (AngelList) startup jobs. LinkedIn intentionally skipped (ToS)."
+  },
+  {
+    "name": "Indeed - AI/ML/SDE Jobs Pune",
+    "ats_type": "indeed",
+    "identifier": "data scientist,machine learning engineer,software engineer,backend developer",
+    "location_priority": "pune",
+    "search_location": "Pune, Maharashtra",
+    "enabled": true,
+    "notes": "v9 aggregator — Indeed job search. May be blocked by Cloudflare; fails gracefully."
+  },
+  {
+    "name": "Indeed - Tech Jobs India",
+    "ats_type": "indeed",
+    "identifier": "ai engineer,full stack developer,devops engineer,python developer",
+    "location_priority": "india",
+    "search_location": "India",
+    "enabled": true,
+    "notes": "v9 aggregator — Indeed broader India search."
+  },
+  {
+    "name": "Glassdoor - Tech Jobs Pune",
+    "ats_type": "glassdoor",
+    "identifier": "data scientist,software engineer,machine learning,backend developer",
+    "location_priority": "pune",
+    "search_location": "pune",
+    "enabled": true,
+    "notes": "v9 aggregator — Glassdoor India. May be blocked by bot protection; fails gracefully."
+  },
+  {
+    "name": "Glassdoor - AI/ML Jobs India",
+    "ats_type": "glassdoor",
+    "identifier": "ai engineer,data analyst,ml engineer,python developer",
+    "location_priority": "india",
+    "search_location": "india",
+    "enabled": true,
+    "notes": "v9 aggregator — Glassdoor broader India search."
+  },
+  {
+    "name": "Amazon",
+    "ats_type": "custom",
+    "identifier": "https://amazon.jobs/content/en/job-categories/data-science",
+    "location_priority": "india",
+    "enabled": true,
+    "notes": "Added from dashboard on 2026-07-13 14:04",
+    "search_location": "India"
+  }
+]
