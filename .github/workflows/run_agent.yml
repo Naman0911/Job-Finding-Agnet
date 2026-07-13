@@ -35,18 +35,15 @@ jobs:
           cache: 'pip'
 
       - name: Install dependencies
-        working-directory: ai-job-hunter
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Install Playwright browsers
-        working-directory: ai-job-hunter
         run: |
           playwright install chromium --with-deps
 
       - name: Run pipeline
-        working-directory: ai-job-hunter
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
@@ -61,7 +58,6 @@ jobs:
 
       - name: Commit and push updated jobs.db
         if: success() && inputs.dry_run != 'true'
-        working-directory: ai-job-hunter
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -79,5 +75,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: pipeline-logs-${{ github.run_id }}
-          path: ai-job-hunter/database/jobs.db
+          path: database/jobs.db
           retention-days: 30
